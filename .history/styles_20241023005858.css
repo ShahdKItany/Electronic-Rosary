@@ -1,0 +1,74 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('') no-repeat center center fixed; /* استبدل هذا المسار بمسار الصورة الخاصة بك */
+    background-size: cover; /* لتغطية كامل الخلفية */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    filter: blur(2px); /* يجعل الخلفية أكثر ضبابية */
+  }
+  
+  .container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* لون الخلفية مع الشفافية */
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    max-width: 500px;
+    width: 90%;
+    position: relative; /* تهيئة موضع العناصر */
+    z-index: 1; /* جلب الحاوية للأمام */
+  }
+  
+  
+  .title {
+    color: #4a4a4a;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    padding: 15px;
+    transition: background-color 0.3s;
+  }
+  
+  .button-group:hover {
+    background-color: #e0e0e0;
+  }
+  
+  button {
+    background-color: #108c67;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.1s;
+  }
+  
+  button:hover {
+    background-color: #79e67d;
+    transform: translateY(-2px);
+  }
+  
+  .counter {
+    font-size: 28px;
+    color:#108c67;
+    font-weight: bold;
+  }
+  

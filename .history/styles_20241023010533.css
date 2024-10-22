@@ -1,0 +1,74 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('image1.jpg'); /* تأكد من أن الصورة موجودة في المسار الصحيح */
+    background-size: cover; /* لتغطية كامل الخلفية */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    /*filter: blur(1px); /* زيادة الضبابية قليلاً لجعل الخلفية أكثر وضوحاً */
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.95); /* لون الخلفية مع شفافية أقل لجعل النص أكثر وضوحًا */
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3); /* زيادة شدة الظل لزيادة الوضوح */
+    padding: 30px;
+    max-width: 500px;
+    width: 90%;
+    position: relative; /* تهيئة موضع العناصر */
+    z-index: 1; /* جلب الحاوية للأمام */
+}
+
+.title {
+    color: #108c67; /* تغيير لون العنوان ليتماشى مع الأزرار */
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8); /* إضافة تأثير ظل للنص لتحسين الوضوح */
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    padding: 15px;
+    transition: background-color 0.3s;
+}
+
+.button-group:hover {
+    background-color: #e0e0e0;
+}
+
+button {
+    background-color: #108c67; /* لون الزر */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+button:hover {
+    background-color: #79e67d; /* تغيير لون الزر عند التحويم */
+    transform: translateY(-2px);
+}
+
+.counter {
+    font-size: 28px;
+    color: #108c67; /* لون العدادات */
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8); /* إضافة تأثير ظل للنص */
+}
